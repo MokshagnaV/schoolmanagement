@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>sign up</title>
+    </head>
+
+    <body>
+        <center>
+        <form method="POST" >
+            {% csrf_token %}
+            <input type="text" placeholder="schooladmin id" name="schooladmin_id"><br><br>
+            <input type="text" placeholder="schooladmin name" name="schooladmin_name"/><br><br>
+            <input type="text" placeholder="school id" name="school_id"/><br><br>
+            <input type="text" placeholder="school name" name="school_name"/><br><br>
+            <input type="text" placeholder="fname" name="fname"><br><br>
+            <input type="text" placeholder="gender" name="gender"><br><br>
+            <input type="email" placeholder="email" name="email"><br><br>
+            <input type="password" placeholder="Password" name="password"/><br><br>
+            <input type="date" placeholder="date of birth" name="dob"><br><br>
+            <input type="text" placeholder="designation" name="designation"><br><br>
+            <input type="text" placeholder="mobile" name="mobile"><br><br>
+            <!-- <input type="file" name="submit" name="stu_photo" > -->
+            <input type="submit" name="submit">
+        </form>
+        </center>
+    </body>
+</html>
